@@ -2,7 +2,6 @@
 <html lang="pt-br">
 <head>
 
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -10,29 +9,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encontre os melhores blocos</title>
+    <title>Encontre os melhores blocos de carnaval</title>
 
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-    <header class="flex">    
-        <img src="./assets/penas.svg" class="penas" alt="Imagem de penas de carnaval">
-        
-        <div id="titulo">
-            <div id="apresentacao">
-                <h3>find your block</h3>
-                <h1>Encontre os melhores blocos de carnaval de 2023</h1>
-            </div>
-
-            <div id="input">
-
+    <header>      
+        <div class="content">
+            <div class="top">
+                <p>find your block</p>
+                <h1>Encontre os <span> melhores blocos </span>  de carnaval de 2023</h1>
             </div>
             
-        </div>
-  
+            <form class="search">
 
-        <img src="./assets/boneca.svg" class="boneca" alt="Imagem de uma boneca  colorida dançando carnaval">
+                <div class="search-field">
+                    <label for="name" place >Pesquise por nome
+                        <input 
+                        placeholder="Pesquise por nome"
+                        type="text" 
+                        id="name" 
+                        name="name">
+                    </label>
+                </div>
+                <div class="search-field">
+                    <label for="city">Selecione uma cidade</label>
+                    <select name="city" id="city">
+                        <option value="0" selected>Selecione sua cidade</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="Salvador">Salvador</option>
+                        
+
+                    </select>
+                </div>
+                <button>Buscar agora</button>
+
+            </form>       
+        </div>   
+    
+            
+
        
     </header>
     
