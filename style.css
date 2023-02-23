@@ -20,8 +20,26 @@
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
-    }
+}
 
+.primary {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+
+    background: #6246ea;
+    border-radius: .5rem;
+
+    text-transform: uppercase;
+    color: #FFFFFF;
+    
+    cursor: pointer;
+    transition: background 200ms;
+}
+
+.secondary {
+
+}
 body {
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;     
@@ -77,25 +95,25 @@ header .content {
 }
 
 header .content .top {
-    text-align: left;
+    text-align: center;
 }
 
 header p {
     font-weight: 500;
-    font-size: 16px;
     line-height: 160%;
+
+    letter-spacing: 0.1rem;
     text-transform: uppercase;
+
     color: #E45858;
 }
 
 header h1 {    
     font-size: 48px;
-    line-height: 125%;  
-
+    line-height: 125%; 
     color: #121214;
-
     max-width: 64.7rem;
-    margin: auto;
+    margin: 1.8rem auto 0;
 }
 
 header h1 span {
@@ -103,8 +121,8 @@ header h1 span {
 }
 
 form {
-
     margin-top: 4rem;
+    
     display: flex;
    
     padding: 4rem;
@@ -123,15 +141,55 @@ form {
     background: #fafaff;
     border-radius: 0.5rem;
     padding: 1.2rem .8rem 1.2rem 1.4rem;
+    
 }
 
 input,
 select {
     color: #7C7C8A;
+    min-width: 29rem;
     
 }
 
 .search-field i {
     font-size: 2.4rem;
     color: #E45858;
+}
+
+select, .select {
+    position: relative;
+}
+
+select {
+    z-index: 1;
+}
+
+.select i.ph-caret-down-light {
+    position: absolute;
+    right: 1rem;
+    z-index: 0;
+    color: #858793;
+}
+
+form button {   
+    padding: 1.2rem 3.2rem;   
+}
+
+button:hover {
+    background: #523dbe;
+    color: white;
+}
+
+main .content {
+    max-width: 1216px;
+    margin: 10rem auto;
+}
+section.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view button {
+    padding: .4rem 2.4rem;
 }
