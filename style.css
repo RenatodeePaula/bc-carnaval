@@ -10,6 +10,18 @@
     font-size: 62.25%;
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+    }
+
 body {
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;     
@@ -19,12 +31,13 @@ input,
 select, 
 button {
     font-family: 'Roboto';
+    all: unset;
 }
 
 header {
     min-height: 53.32rem;
     background-color: #F8F8FF;
-    text-align: center;
+    
 
     position: relative;
     overflow: hidden;
@@ -57,10 +70,14 @@ header::after {
     bottom: -1.2rem;
 }
 
-header .content {
-    border: solid 1px red;
+header .content {    
     width: fit-content;
-    margin: auto   
+    margin: auto 
+
+}
+
+header .content .top {
+    text-align: left;
 }
 
 header p {
@@ -78,6 +95,7 @@ header h1 {
     color: #121214;
 
     max-width: 64.7rem;
+    margin: auto;
 }
 
 header h1 span {
@@ -95,4 +113,25 @@ form {
     background: #FFFFFF;
     border: 0.1rem solid #EAEAEA;
     border-radius: 1rem;
+}
+
+.search-field {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+    background: #fafaff;
+    border-radius: 0.5rem;
+    padding: 1.2rem .8rem 1.2rem 1.4rem;
+}
+
+input,
+select {
+    color: #7C7C8A;
+    
+}
+
+.search-field i {
+    font-size: 2.4rem;
+    color: #E45858;
 }

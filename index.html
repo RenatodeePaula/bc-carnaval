@@ -12,6 +12,8 @@
     <title>Encontre os melhores blocos de carnaval</title>
 
     <link rel="stylesheet" href="./style.css">
+
+    <script src="https://unpkg.com/phosphor-icons"></script>
 </head>
 <body>
 
@@ -24,34 +26,33 @@
             
             <form class="search">
 
-                <div class="search-field">
-                    <label for="name" place >Pesquise por nome
+                <div class="search-field" >
+                    <label for="name" place class="sr-only" >Pesquise por nome  </label>
+                    <i class="ph-magnifying-glass-light"></i>
                         <input 
                         placeholder="Pesquise por nome"
                         type="text" 
                         id="name" 
-                        name="name">
-                    </label>
+                        name="name"
+                        />
+                  
                 </div>
-                <div class="search-field">
-                    <label for="city">Selecione uma cidade</label>
+                <div class="search-field select">
+                    <label for="city" class="sr-only">Selecione uma cidade</label>
+                    <i class="ph-map-pin-light"></i>
                     <select name="city" id="city">
                         <option value="0" selected>Selecione sua cidade</option>
                         <option value="SP">São Paulo</option>
                         <option value="RJ">Rio de Janeiro</option>
-                        <option value="Salvador">Salvador</option>
+                        <option value="Salvador">Salvador</option>                        
                         
-
                     </select>
+                    <i class="ph-caret-down-light"></i>
                 </div>
                 <button>Buscar agora</button>
 
             </form>       
-        </div>   
-    
-            
-
-       
+        </div>       
     </header>
     
 </body>
