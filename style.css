@@ -53,13 +53,13 @@
 
 .secondary {
     color: #6246ea;
-
 }
 
 .secondary:hover {
     background-color: #6246ea;
     color: white;
 }
+
 body {
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;     
@@ -74,8 +74,7 @@ button {
 
 header {
     min-height: 53.32rem;
-    background-color: #F8F8FF;
-    
+    background-color: #F8F8FF;    
 
     position: relative;
     overflow: hidden;
@@ -194,11 +193,6 @@ form button {
     padding: 1.2rem 3.2rem;   
 }
 
-button:hover {
-    background: #523dbe;
-    color: white;
-}
-
 main > .content {
     max-width: 1216px;
     margin: 10rem auto;
@@ -223,8 +217,7 @@ section.cards {
     margin-top: 4rem;
     display: grid;
     gap: 3.2rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    
+    grid-template-columns: 1fr 1fr 1fr;    
 }
 
 .card {    
@@ -250,8 +243,7 @@ section.cards {
     color: #121214;
     font-weight: 700;
     font-size: 20px;
-    line-height: 140%;
-    
+    line-height: 140%;    
 }
 
 .card .location {
@@ -262,6 +254,5 @@ section.cards {
 
 .location i {
     color: #e45858;
-    font-size: 2.4rem;
-    
+    font-size: 2.4rem;    
 }
