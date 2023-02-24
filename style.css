@@ -189,7 +189,7 @@ select {
     color: #858793;
 }
 
-form button {   
+form button .btn {   
     padding: 1.2rem 3.2rem;   
 }
 
